@@ -137,7 +137,7 @@ private:
 class State
 {
 public:
-    virtual ~State() = default;
+    virtual ~State(){};
 
     /**
      * Call to update the state the given amount of time
