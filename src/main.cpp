@@ -16,7 +16,7 @@ int main(int argc, char ** argv) {
     sf::RenderWindow window(sf::VideoMode(10 * 64 + 4 * 32, 10 * 64), "OptimalMiners");
 
     assets->setWindow(&window);
-    Board * game_board = new Board(10, false);
+    Board * game_board = new Board(-1, true);
     UI * ui = new UI();
     game = new Game(game_board);
 
